@@ -11,7 +11,8 @@ pipeline {
         sh '''pwd
 ls -al
 cat Jenkinsfile
-return 0
+exit 0
+
 '''
       }
     }
