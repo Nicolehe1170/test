@@ -8,8 +8,10 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh '''ls -al
-cat *
+        sh '''pwd
+ls -al
+cat Jenkinsfile
+return 0
 '''
       }
     }
