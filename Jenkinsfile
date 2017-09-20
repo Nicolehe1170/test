@@ -6,5 +6,12 @@ pipeline {
         echo 'Hello'
       }
     }
+    stage('Build') {
+      steps {
+        sh '''ls -al
+cat *
+'''
+      }
+    }
   }
 }
